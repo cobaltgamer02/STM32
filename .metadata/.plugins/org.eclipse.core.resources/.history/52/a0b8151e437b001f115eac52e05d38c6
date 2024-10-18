@@ -1,0 +1,6 @@
+//Where is the green led connected?
+//Port: D
+//Pin: 12
+
+#define PERIPH_BASE					(0x40000000UL)
+#define AHB1PERIPH_OFFSET			(0x00020000UL)
