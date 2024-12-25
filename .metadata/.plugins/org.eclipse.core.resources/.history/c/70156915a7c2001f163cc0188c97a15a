@@ -1,0 +1,29 @@
+//Where is the green led connected?
+//Port: D
+//Pin: 12
+
+// Push Button PA0
+#include "stm32f4xx.h"
+#define GPIOAEN										(1U<<0)
+
+#define UART2EN										(1U<<17)
+
+int main() {
+
+	while (1) {
+
+		}
+	}
+}
+
+void uart2_tx_init(void){
+	//----Configure uart gpio pin ----
+	//Enable clock access
+	//Set PA2 mode to alternate function mode
+	//Set PA2 Alternate function type to UART_TX (AF07)
+
+	//---Configure uart module----
+	//Enable clock access to uart2
+	//Configure the transfer direction
+	//Enable uart module
+}

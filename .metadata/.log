@@ -103,3 +103,78 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-10-18 20:15:35.223
 !MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2024-11-02 21:39:47.303 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-02 21:44:51.807
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-02 21:44:51.831
+!MESSAGE Log4j2 initialized with config file C:\Users\Admin\Desktop\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-02 21:45:07.170
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-02 21:47:15.815
+!MESSAGE Indexed '5_uart_tx' (3 sources, 60 headers) in 6.33 sec: 2,853 declarations; 3,845 references; 3 unresolved inclusions; 30 syntax errors; 723 unresolved names (9.7%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-02 22:17:23.083
+!MESSAGE Indexed '9_adc' (4 sources, 60 headers) in 1.94 sec: 2,854 declarations; 3,905 references; 3 unresolved inclusions; 30 syntax errors; 723 unresolved names (9.7%)
+!SESSION 2024-12-21 18:13:13.632 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-12-21 18:13:46.955
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-12-21 18:13:46.967
+!MESSAGE Log4j2 initialized with config file C:\Users\Admin\Desktop\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-21 18:14:01.349
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-21 18:15:35.705
+!MESSAGE Indexed '5_uart_tx' (4 sources, 62 headers) in 4.9 sec: 3,270 declarations; 5,397 references; 0 unresolved inclusions; 4 syntax errors; 3 unresolved names (0.035%)
+!SESSION 2024-12-25 14:57:58.195 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-12-25 14:58:40.758
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-12-25 14:58:40.770
+!MESSAGE Log4j2 initialized with config file C:\Users\Admin\Desktop\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-25 14:58:53.278
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-25 15:53:35.338
+!MESSAGE Indexed '6_uart_printf' (3 sources, 62 headers) in 2.9 sec: 3,291 declarations; 5,489 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-25 15:59:17.939
+!MESSAGE Indexed '7_uart_modular' (4 sources, 62 headers) in 1.27 sec: 3,046 declarations; 4,137 references; 5 unresolved inclusions; 30 syntax errors; 733 unresolved names (9.3%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-25 16:22:21.545
+!MESSAGE Indexed '8_uart_rx' (4 sources, 61 headers) in 1.46 sec: 2,877 declarations; 3,898 references; 6 unresolved inclusions; 30 syntax errors; 723 unresolved names (9.6%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-12-25 17:51:05.925
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-12-25 17:51:05.926
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-12-25 17:51:05.928
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-12-25 17:51:05.928
+!MESSAGE Existing sessions are:

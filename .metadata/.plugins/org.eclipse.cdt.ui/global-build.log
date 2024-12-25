@@ -1,4 +1,26 @@
-22:07:20 **** Incremental Build of configuration Debug for project 4_gpio_input ****
+17:46:54 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\STM32\8_uart_rx\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size  8_uart_rx.elf 
+arm-none-eabi-objdump -h -S 8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1088	      0	   1568	   2656	    a60	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+17:47:07 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j8 all 
+arm-none-eabi-size  8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1088	      0	   1568	   2656	    a60	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+17:50:57 **** Incremental Build of configuration Debug for project 4_gpio_input ****
 make -j8 all 
 arm-none-eabi-size  4_gpio_input.elf 
    text	   data	    bss	    dec	    hex	filename
