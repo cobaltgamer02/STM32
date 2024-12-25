@@ -1,26 +1,43 @@
-17:46:54 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+23:18:08 **** Clean-only build of configuration Debug for project 10_adc_continuous_conversion ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/adc.cyclo ./Src/adc.d ./Src/adc.o ./Src/adc.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/uart.cyclo ./Src/uart.d ./Src/uart.o ./Src/uart.su
+rm -rf 9_adc.elf 9_adc.list 9_adc.map default.size.stdout
+ 
+23:18:09 **** Build of configuration Debug for project 10_adc_continuous_conversion ****
 make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
 arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
-arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\STM32\8_uart_rx\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 8_uart_rx.elf
+arm-none-eabi-gcc -o "10_adc_continuous_conversion.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\STM32\10_adc_continuous_conversion\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_adc_continuous_conversion.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_adc_continuous_conversion.elf
  
-arm-none-eabi-size  8_uart_rx.elf 
-arm-none-eabi-objdump -h -S 8_uart_rx.elf  > "8_uart_rx.list"
+arm-none-eabi-size  10_adc_continuous_conversion.elf 
+arm-none-eabi-objdump -h -S 10_adc_continuous_conversion.elf  > "10_adc_continuous_conversion.list"
    text	   data	    bss	    dec	    hex	filename
-   1088	      0	   1568	   2656	    a60	8_uart_rx.elf
+   5424	     92	   1908	   7424	   1d00	10_adc_continuous_conversion.elf
 Finished building: default.size.stdout
  
-Finished building: 8_uart_rx.list
+Finished building: 10_adc_continuous_conversion.list
  
-17:47:07 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+23:18:24 **** Incremental Build of configuration Debug for project 10_adc_continuous_conversion ****
 make -j8 all 
-arm-none-eabi-size  8_uart_rx.elf 
+arm-none-eabi-size  10_adc_continuous_conversion.elf 
    text	   data	    bss	    dec	    hex	filename
-   1088	      0	   1568	   2656	    a60	8_uart_rx.elf
+   5424	     92	   1908	   7424	   1d00	10_adc_continuous_conversion.elf
 Finished building: default.size.stdout
  
-17:50:57 **** Incremental Build of configuration Debug for project 4_gpio_input ****
+23:20:03 **** Incremental Build of configuration Debug for project 10_adc_continuous_conversion ****
+make -j8 all 
+arm-none-eabi-size  10_adc_continuous_conversion.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5424	     92	   1908	   7424	   1d00	10_adc_continuous_conversion.elf
+Finished building: default.size.stdout
+ 
+23:21:20 **** Build of configuration Debug for project 4_gpio_input ****
 make -j8 all 
 arm-none-eabi-size  4_gpio_input.elf 
    text	   data	    bss	    dec	    hex	filename
