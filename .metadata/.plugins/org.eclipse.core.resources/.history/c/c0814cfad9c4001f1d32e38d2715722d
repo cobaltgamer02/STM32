@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdint.h>
+#include "stm32f4xx.h"
+#include "uart.h"
+#include "adc.h"
+#include "systick.h"
+#include "tim.h"
+//PA6 AF2
+
+
+int main() {
+
+	tim2_PA15_output_compare();
+	void tim3_PA6_input_compare();
+
+	while (1) {
+
+	}
+}
