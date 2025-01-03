@@ -1,22 +1,21 @@
-10:43:37 **** Build of configuration Debug for project 14_input_capture ****
+17:06:04 **** Incremental Build of configuration Debug for project 20_uart_tx_dma ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
-arm-none-eabi-gcc -o "14_input_capture.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\STM32\14_input_capture\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_input_capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 14_input_capture.elf
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Admin/Desktop/STM32/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "20_uart_tx_dma.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\STM32\20_uart_tx_dma\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20_uart_tx_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 20_uart_tx_dma.elf
  
-arm-none-eabi-size  14_input_capture.elf 
-arm-none-eabi-objdump -h -S 14_input_capture.elf  > "14_input_capture.list"
+arm-none-eabi-size  20_uart_tx_dma.elf 
+arm-none-eabi-objdump -h -S 20_uart_tx_dma.elf  > "20_uart_tx_dma.list"
    text	   data	    bss	    dec	    hex	filename
-   1012	      0	   1568	   2580	    a14	14_input_capture.elf
+   1372	      0	   1568	   2940	    b7c	20_uart_tx_dma.elf
 Finished building: default.size.stdout
  
-Finished building: 14_input_capture.list
+Finished building: 20_uart_tx_dma.list
  
-10:44:06 **** Incremental Build of configuration Debug for project 14_input_capture ****
+17:06:58 **** Incremental Build of configuration Debug for project 20_uart_tx_dma ****
 make -j8 all 
-arm-none-eabi-size  14_input_capture.elf 
+arm-none-eabi-size  20_uart_tx_dma.elf 
    text	   data	    bss	    dec	    hex	filename
-   1012	      0	   1568	   2580	    a14	14_input_capture.elf
+   1372	      0	   1568	   2940	    b7c	20_uart_tx_dma.elf
 Finished building: default.size.stdout
  
